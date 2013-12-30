@@ -1,85 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Huang Qi's Proposal to Cai Qidan</title>
-  </head>
+  <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <link rel="stylesheet" href="stylesheets/main.css"  type="text/css" />
+  <link rel="stylesheet" href="stylesheets/project-10.css"  type="text/css" />
+  <link rel="stylesheet" href="stylesheets/project-11.css"  type="text/css" />
+  <link rel="stylesheet" href="stylesheets/project-15.css"  type="text/css" />
+  <link rel="stylesheet" href="stylesheets/project-8.css"  type="text/css" />
 
-  <body>
-    <!-- <a id="forkme_banner" href="https://github.com/hqinnus">View on GitHub</a> -->
-    <div class="shell">
+  <script type="text/javascript" src="javascripts/modernizr.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+  <script src="http://code.angularjs.org/1.2.0rc1/angular.js"></script>
+  <script src="http://code.angularjs.org/1.2.0rc1/angular-animate.min.js"></script>
+  <script src="http://code.angularjs.org/1.2.0rc1/angular-touch.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+    $('#main_content').headsmart()
+    })
+  </script>
+  <title>Huang Qi's Proposal to Cai Qidan</title>
+</head>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>How I love Cai Qidan - Huang Qi</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
 
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
+<body ng-controller="MainCtrl">
+
+  <div id="projectDetailsView" style="height: 752px; opacity: 1;">
+    <div id="projectDetailsInner" style="height: 752px;">
+      <div id="projectDetailContentMask" style="height: 752px; -webkit-transform: translate(0px, 0px);">
+        <div class="projectDetailContent" id="projectDetailContent8" style="margin-left: 160px; -webkit-transform: translate(0px, -1234.8101614153745px);">
+          <div class="projectImage" id="projectImage1">
+            <img src="http://www.welovenoise.com/assets/images/projects/beanies/screen-01.jpg">
+          </div>
+
+          <div class="projectImage" id="projectImage2">
+            <img src="http://www.welovenoise.com/assets/images/projects/oysho/screen-02.jpg">
+          </div>
+
+          <div class="projectCopy" id="projectCopy1">
+            <div class="projectCopyTitle">
+              The Band
+            </div>
+
+            <div class="projectCopyBody">
+              <p>Ongoing work as lead designer for the Huddersfield born band that have played together for over 10 years. The band fall under the genre of indie music, but have folk &amp; rock influences that are more apparent in their later albums.</p>
+            </div>
+          </div>
+
+          <div class="projectCopy" id="projectCopy2">
+            <div class="projectCopyTitle">
+              The Project
+            </div>
+
+            <div class="projectCopyBody">
+              <p>This project features the work from the band's latest album "making waves". </p>
+              <p>The new direction is vastly different from  previous albums in the sense that the direction is more vibrant &amp; loud to reflect the style of their music now.</p>
+            </div>
+          </div>
+
+          <div class="projectImage" id="projectImage3">
+            <img src="http://www.welovenoise.com/assets/images/projects/oysho/screen-03.jpg">
+          </div>
+
+          <div class="projectImage" id="projectImage4">
+            <img src="http://www.welovenoise.com/assets/images/projects/oysho/screen-04.jpg">
+          </div>
+
+          <div class="projectCopy" id="projectCopy3">
+            <div class="projectCopyBody">
+              <p>Promotional B-side albums<br>Fire through the Fog</p>
+
+              <p>A selection of songs given away as a promo for the new album.</p>
+
+              <p>3 albums were made in total with each artwork being relative to the place they were offered.</p>
+            </div>
+          </div>
+
+            <div class="projectImage" id="projectImage5">
+              <img src="http://www.welovenoise.com/assets/images/projects/oysho/screen-05.jpg">
+            </div>
+
+  <ul class="projectNavigation">
+    <li>
+    <a id="leftButton" href="work/dwade/" class="projectNavButton">
+      <div data-deg="-90" class="arrowIcon"><!--?xml version="1.0" encoding="utf-8" ?-->
+      <svg version="1.1">
+      <g transform="rotate(-90 32 32)">
+      <rect x="32" y="26" width="1" height="1" fill="#ffffff"></rect>
+      <rect x="31" y="27" width="3" height="1" fill="#ffffff"></rect>
+      <rect x="30" y="28" width="5" height="1" fill="#ffffff"></rect>
+      <rect x="29" y="29" width="7" height="1" fill="#ffffff"></rect>
+      <rect x="32" y="30" width="1" height="1" fill="#ffffff"></rect>
+      <rect x="32" y="31" width="1" height="1" fill="#ffffff"></rect>
+      <rect x="32" y="33" width="1" height="1" fill="#ffffff"></rect>
+      <rect x="32" y="35" width="1" height="1" fill="#ffffff"></rect>
+      <rect x="32" y="37" width="1" height="1" fill="#ffffff"></rect>
+      </g>
+      </svg>
       </div>
+      </a>
+      </li>
+      <li>
+      <a id="topButton" href="#" class="projectNavButton"><div data-deg="0" class="arrowIcon"><!--?xml version="1.0" encoding="utf-8" ?--><svg version="1.1"><g transform="rotate(0 32 32)"><rect x="32" y="26" width="1" height="1" fill="#ffffff"></rect><rect x="31" y="27" width="3" height="1" fill="#ffffff"></rect><rect x="30" y="28" width="5" height="1" fill="#ffffff"></rect><rect x="29" y="29" width="7" height="1" fill="#ffffff"></rect><rect x="32" y="30" width="1" height="1" fill="#ffffff"></rect><rect x="32" y="31" width="1" height="1" fill="#ffffff"></rect><rect x="32" y="33" width="1" height="1" fill="#ffffff"></rect><rect x="32" y="35" width="1" height="1" fill="#ffffff"></rect><rect x="32" y="37" width="1" height="1" fill="#ffffff"></rect></g></svg></div></a></li><li><a id="rightButton" href="work/libtech/" class="projectNavButton"><div data-deg="90" class="arrowIcon" style="-webkit-transform: matrix(1, 0, 0, 1, 0, 0);"><!--?xml version="1.0" encoding="utf-8" ?--><svg version="1.1"><g transform="rotate(90 32 32)"><rect x="32" y="26" width="1" height="1" fill="#ffffff"></rect><rect x="31" y="27" width="3" height="1" fill="#ffffff"></rect><rect x="30" y="28" width="5" height="1" fill="#ffffff"></rect><rect x="29" y="29" width="7" height="1" fill="#ffffff"></rect><rect x="32" y="30" width="1" height="1" fill="#ffffff"></rect><rect x="32" y="31" width="1" height="1" fill="#ffffff"></rect><rect x="32" y="33" width="1" height="1" fill="#ffffff"></rect><rect x="32" y="35" width="1" height="1" fill="#ffffff"></rect><rect x="32" y="37" width="1" height="1" fill="#ffffff"></rect></g></svg></div></a></li></ul></div></div><div id="scrollWrapper" style="height: 752px;"><div id="scrollBackground"><div id="scrollThumb" style="height: 50px; top: 383.27582668689007px;"></div></div></div></div></div>
 
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
-			I know I love you
-		</h3>
-
-		<p>
-			When is the first time we meet
-		</p>
-
-		<pre>
-			<code>
-				It is all beautiful
-			</code>
-		</pre>
-
-		<h3>
-			Great time
-		</h3>
-
-		<p>
-			How wonderful it is!
-		</p>
-
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/hqinnus">Huang Qi</a> for the best wedding proposal </p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </footer>
-
-    </div>
-
-  </body>
+</body>
 </html>
