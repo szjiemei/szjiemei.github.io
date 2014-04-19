@@ -3,7 +3,7 @@ html(lang='en')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
-    title= title
+    title= header
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css') 
     script(src="http://code.jquery.com/jquery.min.js")
@@ -14,23 +14,16 @@ html(lang='en')
         a.navbar-brand(href='#/polls')= title
     div.container
       div.carousel.slide(id="wedding-photos" data-ride="carousel" data-interval="3000")
-        ol.carousel-indicators
-          li(data-target="#wedding-photos" data-slide-to="0")
-          li.active(data-target="#wedding-photos" data-slide-to="1")
-          li(data-target="#wedding-photos" data-slide-to="2")
         div.carousel-inner
           div.item
               img(src="/img/DSC_4806.jpg")
               div.carousel-caption
-                h1="Qi Qi & Cai Cai"
           div.item.active
               img(src="/img/DSC_4831.jpg")
               div.carousel-caption
-                h1="Qiqi"
           div.item
               img(src="/img/DSC_4846.jpg")
               div.carousel-caption
-                h1="Caicai"
         a.left.carousel-control(href="#wedding-photos" data-slide="prev")
           span.glyphicon.glyphicon-chevron-left
         a.right.carousel-control(href="#wedding-photos" data-slide="next")
@@ -38,8 +31,8 @@ html(lang='en')
     div.container-fluid
       div.row
         div.col-md-4
-          p="hello"
+          p=""
         div.col-md-4
-          p="hi"
+          p=""
         div.col-md-4
-          p="i love qq"
+          p=""
