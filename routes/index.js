@@ -4,6 +4,5 @@ exports.index = function(req, res){
 };
 
 exports.mobile = function(req, res){
-    res.render('mobile', { header: 'Wedding of Huang Qi & Cai Qidan', 
-    					title:'Mobile Site in Construction.' });
+    res.render('mobile.html');
 };
