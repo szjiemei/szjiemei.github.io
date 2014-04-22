@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 		
 		var videoContainer = $('#video-container');
 		
-		videoContainer.prepend('<iframe id="vp1cvjz5" title="Video Player" width="432" height="243" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1398175635&f=cvjz5XujtVh6TH5hmDeD0A&d=0&m=p&r=360p+480p&volume=100&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>');
+		videoContainer.prepend('<iframe id="vp1cvjz5" title="Video Player" width="500" height="281" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1398175635&f=cvjz5XujtVh6TH5hmDeD0A&d=0&m=p&r=360p+480p&volume=100&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>');
 		
 		resizeToCover();
 		
