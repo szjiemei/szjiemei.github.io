@@ -23,8 +23,7 @@ app.use(function(err, req, res, next) {
 });
 
 // Main App Page
-app.get('/', checkForMobile, routes.mobile);
-app.get('/mobile', routes.mobile);
+app.get('/', routes.index);
 
 
 http.createServer(app).listen(app.get('port'), function(){
