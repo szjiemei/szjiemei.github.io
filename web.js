@@ -23,7 +23,7 @@ app.use(function(err, req, res, next) {
 });
 
 // Main App Page
-app.get('/', checkForMobile, routes.index);
+app.get('/', checkForMobile, routes.mobile);
 app.get('/mobile', routes.mobile);
 
 
