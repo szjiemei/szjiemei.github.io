@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 		
 		var videoContainer = $('#video-container');
 		
-		videoContainer.prepend('<iframe src="//player.vimeo.com/video/81581011?title=0&amp;byline=0&amp;portrait=0&amp;color=ff4242&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+		videoContainer.prepend('<iframe id="vp1cvjz5" title="Video Player" width="432" height="243" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1398175635&f=cvjz5XujtVh6TH5hmDeD0A&d=0&m=p&r=360p+480p&volume=100&start_res=360p&i=m&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>');
 		
 		resizeToCover();
 		
