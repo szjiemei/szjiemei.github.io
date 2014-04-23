@@ -442,26 +442,26 @@ jQuery(document).ready(function ($) {
 	
 	// Gallery Mouseovers
 	
-	$('.gallery-item')
-	.mouseenter(function() {
-		var gallery = $(this);
-		//$('.gallery-item img').stop(true,true);
-		gallery.find('.gallery-info').stop().fadeIn(100);
-		gallery.find('img').stop().animate({
-			opacity: 0.05,
-			left: "+=50"
-		}, 500, function () {});
-		
-	})
-	.mouseleave(function(){
-		var gallery = $(this);
-		//$('.gallery-item img').stop(true,true);
-		gallery.find('.gallery-info').stop().fadeOut(0);
-		gallery.find('img').stop().animate({
-			opacity: 1.00,
-			left: "+=50"
-		}, 500, function () {});
-	});
+//	$('.gallery-item')
+//	.mouseenter(function() {
+//		var gallery = $(this);
+//		//$('.gallery-item img').stop(true,true);
+//		gallery.find('.gallery-info').stop().fadeIn(100);
+//		gallery.find('img').stop().animate({
+//			opacity: 0.05,
+//			left: "+=50"
+//		}, 500, function () {});
+//		
+//	})
+//	.mouseleave(function(){
+//		var gallery = $(this);
+//		//$('.gallery-item img').stop(true,true);
+//		gallery.find('.gallery-info').stop().fadeOut(0);
+//		gallery.find('img').stop().animate({
+//			opacity: 1.00,
+//			left: "+=50"
+//		}, 500, function () {});
+//	});
 	
 	// Team Members
 	
@@ -682,7 +682,6 @@ preload([
 	'img/play-button-hover.png',
 	'img/back-to-top-hover.png',
 	'img/arrow-down-hover.png',
-	'img/icon-bio-active.png',
 	'img/icon-mail-active.png',
 	'img/icon-down-active.png',
 	'img/icon-hello-mail-white.png',
