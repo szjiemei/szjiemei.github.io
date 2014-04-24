@@ -1,0 +1,24 @@
+{
+  "name": "qiqicaicaiwedding",
+  "version": "0.0.0",
+  "description": "wedding site for qiqi and caicai",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:qiqicaicaiwedding.git"
+  },
+  "author": "huangqi",
+  "license": "ISC",
+  "dependencies": {
+    "logfmt": "^1.1.2",
+    "express": "^4.0.0",
+    "jade":"*",
+    "ejs":"*"
+  },  
+  "engines": {
+  	"node": "0.10.x"
+  }
+}
