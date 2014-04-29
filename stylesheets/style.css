@@ -462,7 +462,7 @@ a:visited {
 
 /* Ditto 1 */ 
 
-#ditto1 {
+#wedding {
 	background: #fff url('../img/wedding-bg.jpg') no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -472,7 +472,7 @@ a:visited {
 	padding: 0;
 }
 @media (max-width: 480px) {
-	#ditto1 {
+	#wedding {
 		background: #fff url('../img/wedding-bg.jpg') no-repeat 50% 0;
 		background-attachment: fixed;
 		background-size: cover;
@@ -481,7 +481,7 @@ a:visited {
 		-moz-background-size: cover;
 	}
 }
-body.ismobile #ditto1 {
+body.ismobile #wedding {
 	background-attachment: scroll !important;
 }
 .on-center {
@@ -1884,7 +1884,7 @@ body.ismobile #work .gallery-item img {
 
 /* Not Found */ 
 
-#ditto1.error1 {
+#wedding.error1 {
 	background: #fff url('../img/error-bg.jpg') no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -1892,11 +1892,11 @@ body.ismobile #work .gallery-item img {
 	-moz-background-size: cover;
 	padding: 0;
 }
-#ditto1.error1 .on-center {
+#wedding.error1 .on-center {
 	height: 140px;
 }
 @media (max-width: 480px) {
-	#ditto1.error1 {
+	#wedding.error1 {
 		background: #fff url('../img/error-bg.jpg') no-repeat 50% 0;
 		background-size: cover;
 		-webkit-background-size: cover;

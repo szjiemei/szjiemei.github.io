@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
 	var fullNavOffset = 86;
 	var mobileNavOffset = 0;
 	var fullScreenImg = true; // First Slide Full Screen
-	var fullScreenSlideId = '#ditto1';
+	var fullScreenSlideId = '#wedding';
 	var logoScrollToTop = true;
 	var mobileMenuWidth = 730;
 	var carouselMouseActive = false;
