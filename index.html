@@ -121,7 +121,16 @@
 
                 rowData.forEach(cellData => {
                     let cell = document.createElement("td");
-                    cell.innerText = cellData.trim();
+                    
+                    // Check if the cell is in the 3rd or 4th column
+                    if (index === 2 || index === 3) {
+                        let anchor = document.createElement("a");
+                        anchor.setAttribute("href", cellData.trim());
+                        anchor.innerText = "Link";
+                        cell.appendChild(anchor);
+                    } else {
+                        cell.innerText = cellData.trim();
+                    }
                     row.appendChild(cell);
                 });
 
