@@ -74,21 +74,65 @@
                 padding: 0 10px; /* Smaller padding for mobile devices */
             }
         }
+
+        .resize-handle {
+            cursor: col-resize;
+            background-color: #ccc;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 5px;
+        }
+    </style>
     </style>
 </head>
 
 <body>
-    <h2>圣则姐妹学校</h2>
-
-    <!-- Table for displaying CSV data -->
-    <table id="csvTable">
-        <thead>
-            <tr id="headers"></tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-    </table>
+    <div class="container">
+        <h2>圣则姐妹学校</h2>
+    
+        <!-- Table for displaying CSV data -->
+        <table id="csvTable">
+            <thead>
+                <tr id="headers"></tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
 
     <script>
+        // JavaScript for making table columns resizable
+        window.onload = function() {
+            var thElements = document.getElementById("csvTable").getElementsByTagName("th");
+            for (var i = 0; i < thElements.length; i++) {
+                var resizeHandle = document.createElement("div");
+                resizeHandle.className = "resize-handle";
+
+                // Mouse events for resizing
+                resizeHandle.addEventListener("mousedown", function(e) {
+                    var th = e.target.parentElement;
+                    var startX = e.pageX;
+                    var startWidth = th.offsetWidth;
+
+                    var onMouseMove = function(e) {
+                        th.style.width = startWidth + (e.pageX - startX) + "px";
+                    }
+
+                    var onMouseUp = function() {
+                        document.removeEventListener("mousemove", onMouseMove);
+                        document.removeEventListener("mouseup", onMouseUp);
+                    }
+
+                    document.addEventListener("mousemove", onMouseMove);
+                    document.addEventListener("mouseup", onMouseUp);
+                });
+
+                thElements[i].style.position = "relative";
+                thElements[i].appendChild(resizeHandle);
+            }
+        };
+        
         // Function to load CSV file and parse it
         function loadCSV(url) {
             fetch(url, {
@@ -119,7 +163,7 @@
                 let row = document.createElement("tr");
                 let rowData = data[i].split(',');
 
-                rowData.forEach(cellData => {
+                rowData.forEach((cellData, index) => {
                     let cell = document.createElement("td");
                     
                     // Check if the cell is in the 3rd or 4th column
