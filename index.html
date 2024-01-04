@@ -1,1 +1,74 @@
-<h2>Hello World</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Table from CSV</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;    
+        }
+    </style>
+</head>
+<body>
+
+    <h2>圣则姐妹学校</h2>
+
+    <!-- Table for displaying CSV data -->
+    <table id="csvTable">
+        <thead>
+            <tr id="headers"></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script>
+        // Function to load CSV file and parse it
+        function loadCSV(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(text => {
+                    let lines = text.split('\n');
+                    generateTable(lines);
+                });
+        }
+
+        // Function to generate table from CSV data
+        function generateTable(data) {
+            let table = document.getElementById("csvTable");
+            let tbody = document.getElementById("tableBody");
+            let headers = document.getElementById("headers");
+
+            // Extract headers
+            let headersData = data[0].split(',');
+            headersData.forEach(header => {
+                let th = document.createElement("th");
+                th.innerText = header.trim();
+                headers.appendChild(th);
+            });
+
+            // Extract and append other data
+            for (let i = 1; i < data.length; i++) {
+                let row = document.createElement("tr");
+                let rowData = data[i].split(',');
+
+                rowData.forEach(cellData => {
+                    let cell = document.createElement("td");
+                    cell.innerText = cellData.trim();
+                    row.appendChild(cell);
+                });
+
+                tbody.appendChild(row);
+            }
+        }
+
+        // Load the CSV file
+        loadCSV('content_data.csv'); // Replace with your CSV file path
+    </script>
+
+</body>
+</html>
