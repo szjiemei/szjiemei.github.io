@@ -189,10 +189,15 @@
 
             // Extract and append other data
             for (let i = 1; i < data.length; i++) {
+                if data.trim() === "" {
+                    continue;
+                }
+                
                 let row = document.createElement("tr");
                 let rowData = data[i].split(',');
 
                 rowData.forEach((cellData, index) => {
+                    
                     let cell = document.createElement("td");
                     
                     // Check if the cell is in the 4rd or 5th column
