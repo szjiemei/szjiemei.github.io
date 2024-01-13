@@ -22,6 +22,10 @@
             color: #4a4e69;
             text-align: center;
         }
+        a {
+            color: #4a4e69;
+            text-align: center;
+        }
 
         table {
             border-collapse: collapse;
@@ -168,7 +172,7 @@
                     let cell = document.createElement("td");
                     
                     // Check if the cell is in the 4rd or 5th column
-                    if (index === 3 || index === 4) {
+                    if (index === 3 || index === 4 || index === 5) {
                         let anchor = document.createElement("a");
                         anchor.setAttribute("href", cellData.trim());
                         anchor.innerText = "链接";
