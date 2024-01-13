@@ -201,14 +201,15 @@
                     let cell = document.createElement("td");
                     
                     // Check if the cell is in the 4rd or 5th column
-                    if ((index === 3 || index === 4 || index === 5) && cellData.trim() !== "") {
+                    if ((index === 3 || index === 4 || index === 5) && cellData.trim() !== "t") {
                         let anchor = document.createElement("a");
                         anchor.setAttribute("href", cellData.trim());
+                        anchor.setAttribute("target", "_blank"); // Open in a new tab
                         anchor.innerText = "链接";
                         cell.appendChild(anchor);
                     } else {
                         // If the cell data is empty, set the text to "更新中"
-                        cell.innerText = cellData.trim() === "" ? "更新中" : cellData.trim();
+                        cell.innerText = cellData.trim() === "t" ? "更新中" : cellData.trim();
                     }
                     row.appendChild(cell);
                 });
