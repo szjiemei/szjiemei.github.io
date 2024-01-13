@@ -197,7 +197,22 @@
                     let cell = document.createElement("td");
                     
                     // Check if the cell is in the 4rd or 5th column
-                    if ((index === 3 || index === 4 || index === 5) && cellData.trim() !== "t") {
+                    if (cellData.trim().match(/\.(jpeg|jpg|gif|png)$/)) {
+                        // Create an image element and set its source to the thumbnail version
+                        let img = document.createElement("img");
+                        img.src = cellData.trim();
+                        img.style.width = '50px'; // Set the thumbnail size
+                        img.style.height = 'auto';
+                        img.style.cursor = 'pointer';
+                        img.alt = 'Thumbnail';
+                        
+                        // Add click event to open the full image
+                        img.addEventListener('click', function() {
+                            window.open(this.src, '_blank');
+                        });
+                        
+                        cell.appendChild(img);
+                    } else if ((index === 3 || index === 4 || index === 5) && cellData.trim() !== "t") {
                         let anchor = document.createElement("a");
                         anchor.setAttribute("href", cellData.trim());
                         anchor.setAttribute("target", "_blank"); // Open in a new tab
