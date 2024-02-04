@@ -197,10 +197,10 @@
                     let cell = document.createElement("td");
                     
                     // Check if the cell is in the 4rd or 5th column
-                    if (index == 5 || cellData.trim().match(/\.(jpeg|jpg|gif|png)$/)) {
+                    if (cellData.trim().match(/\.(jpeg|jpg|gif|png)$/)) {
                         // Create an image element and set its source to the thumbnail version
                         let img = document.createElement("img");
-                        img.src = cellData.trim();
+                        img.src = "img/"+ cellData.trim();
                         img.style.width = '50px'; // Set the thumbnail size
                         img.style.height = 'auto';
                         img.style.cursor = 'pointer';
