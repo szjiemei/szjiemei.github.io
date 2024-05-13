@@ -219,8 +219,8 @@
                         anchor.innerText = "链接";
                         cell.appendChild(anchor);
                     } else {
-                        // If the cell data is empty, set the text to "更新中"
-                        cell.innerText = cellData.trim() === "t" ? "更新中" : cellData.trim();
+                        // If the cell data is empty, set the text to "更新中..."
+                        cell.innerText = cellData.trim() === "t" ? "更新中..." : cellData.trim();
                     }
                     row.appendChild(cell);
                 });
